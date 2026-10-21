@@ -30,7 +30,7 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 *An adaptive agentic system featuring multi-tiered safety gates that knows when to stop talking and hand off safely.*
 - **Key Architecture:** C-SSRS mental health safety classifier, quarantined state extraction, pure planner over 10-item evidence-based libraries, and real-time reviewer queue (`/review`).
 - **Results (Gemini 3.6 Flash, `npm run eval -- --compare`):** escalation accuracy 14/15 vs 10/15 baseline on the dev set, 16/16 vs 11/16 on a held-out set written after the rules were frozen. The baseline missed all 20 crisis cases across both models; the agent surfaced the crisis screen on all 20. Same code also benchmarked on Llama 3.1 8B.
-- **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira-liard-theta.vercel.app)
+- **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira.slayertunnel.xyz)
 
 #### 2. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrealy)
 *Full-stack Spotify integration and AI agent controller powered by Model Context Protocol (MCP) HTTP streaming and Next.js 16.*
@@ -65,7 +65,7 @@ Mobile & Frontend    : React, React Native, TailwindCSS, Lighthouse Optimization
 - **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com)
 - **Twitter / X:** [@PurujitVij](https://x.com/PurujitVij)
 - **GitHub:** [github.com/purujitvij](https://github.com/purujitvij)
-- **Portfolio & Live Demos:** [MIRA](https://mira-liard-theta.vercel.app) · [BeatRelay](https://beatrealy.vercel.app)
+- **Portfolio & Live Demos:** [MIRA](https://mira.slayertunnel.xyz) · [BeatRelay](https://beatrealy.vercel.app)
 
 ---
 *Open to collaborating on agentic AI systems, MCP tooling, and distributed backends.*
