@@ -33,7 +33,13 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 - **Benchmarking & Evals:** Automated test matrix (`eval/run.mts`) evaluating escalation accuracy and false positive rates across Gemini 3.6 Flash & Llama 3.1 8B.
 - **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira-liard-theta.vercel.app)
 
-#### 2. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
+#### 2. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrealy)
+*Full-stack Spotify integration and AI agent controller powered by Model Context Protocol (MCP) HTTP streaming and Next.js 16.*
+- **Key Architecture:** Dual-transport MCP server (stdio for local desktop agents,  for remote web clients), session management with , and interactive agent chat interface ().
+- **Tool Capabilities:** Full Spotify toolchain including playback manipulation (play/pause/seek/transfer), playlist creation, saved library curation, and live OpenAPI/Swagger documentation ().
+- **Stack:** TypeScript, Express, Next.js 16, React 19, Radix UI, Framer Motion, Vercel · [Live Demo](https://beatrealy.vercel.app)
+
+#### 3. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
 *High-performance MCP server connecting LLMs to the Stockfish UCI engine for deterministic gameplay and tactical analysis.*
 - **Key Contributions & Merged PRs:**
   - **[PR #6](https://github.com/turlockmike/chess-mcp/pull/6):** Dynamic cross-platform Stockfish binary auto-discovery (M-series Apple Silicon, Intel Mac, Linux, Windows).
@@ -60,7 +66,7 @@ Mobile & Frontend    : React, React Native, TailwindCSS, Lighthouse Optimization
 - **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com)
 - **Twitter / X:** [@PurujitVij](https://x.com/PurujitVij)
 - **GitHub:** [github.com/purujitvij](https://github.com/purujitvij)
-- **Portfolio / Live Project:** [mira-liard-theta.vercel.app](https://mira-liard-theta.vercel.app)
+- **Portfolio & Live Demos:** [MIRA](https://mira-liard-theta.vercel.app) · [BeatRelay](https://beatrealy.vercel.app)
 
 ---
 *Always excited to collaborate on frontier Agentic AI systems, MCP tooling, and distributed system architectures.*
