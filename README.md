@@ -18,9 +18,8 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 
 ### 🧠 Core Architectural Pillars
 
-- **🤖 Autonomous AI Agents & Tool Calling:** Multi-tiered safety gates, quarantined state extraction, deterministic memory pipelines, and automated LLM evaluation harnesses (Gemini, Claude, Llama).
+- **🤖 AI Agents & Tool Calling:** Safety gates that can only raise the risk level, quarantined state extraction, deterministic memory pipelines, and LLM eval harnesses (Gemini, Claude, Llama).
 - **🔌 Model Context Protocol (MCP):** Designing resilient, headless MCP server runtimes, stdio/SSE transports, and cross-platform native engine integrations.
-- **🛡️ Deterministic Guardrails ("Blunder Guard"):** Creating pre-flight verification interceptors that catch spatial, logic, and hallucination bugs in frontier LLMs before state mutation.
 - **☁️ Cloud & Distributed Infrastructure:** Multi-tenant NestJS, PostgreSQL with Row-Level Security (RLS), Supabase, AWS ECS deployment optimization, Docker multi-stage builds, and CI/CD pipelines.
 
 ---
@@ -30,7 +29,7 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 #### 1. [MIRA — Adaptive Wellness Agent Platform](https://github.com/purujitvij/mira)
 *An adaptive agentic system featuring multi-tiered safety gates that knows when to stop talking and hand off safely.*
 - **Key Architecture:** C-SSRS mental health safety classifier, quarantined state extraction, pure planner over 10-item evidence-based libraries, and real-time reviewer queue (`/review`).
-- **Benchmarking & Evals:** Automated test matrix (`eval/run.mts`) evaluating escalation accuracy and false positive rates across Gemini 3.6 Flash & Llama 3.1 8B.
+- **Results (Gemini 3.6 Flash, `npm run eval -- --compare`):** escalation accuracy 14/15 vs 10/15 baseline on the dev set, 16/16 vs 11/16 on a held-out set written after the rules were frozen. The baseline missed all 20 crisis cases across both models; the agent surfaced the crisis screen on all 20. Same code also benchmarked on Llama 3.1 8B.
 - **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira-liard-theta.vercel.app)
 
 #### 2. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrealy)
@@ -40,10 +39,10 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 - **Stack:** TypeScript, Express, Next.js 16, React 19, Radix UI, Framer Motion, Vercel · [Live Demo](https://beatrealy.vercel.app)
 
 #### 3. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
-*High-performance MCP server connecting LLMs to the Stockfish UCI engine for deterministic gameplay and tactical analysis.*
-- **Key Contributions & Merged PRs:**
+*MCP server connecting LLMs to the Stockfish UCI engine for gameplay and tactical analysis. Fork of turlockmike/chess-mcp with fixes submitted upstream.*
+- **Open PRs on [turlockmike/chess-mcp](https://github.com/turlockmike/chess-mcp):**
   - **[PR #6](https://github.com/turlockmike/chess-mcp/pull/6):** Dynamic cross-platform Stockfish binary auto-discovery (M-series Apple Silicon, Intel Mac, Linux, Windows).
-  - **[PR #7](https://github.com/turlockmike/chess-mcp/pull/7):** Purged corporate AWS CodeArtifact poisoned lockfile endpoints, restoring out-of-the-box `npm install`.
+  - **[PR #7](https://github.com/turlockmike/chess-mcp/pull/7):** Pointed the lockfile back at the public npm registry so `npm install` works out of the box.
   - **[PR #8](https://github.com/turlockmike/chess-mcp/pull/8):** Multi-stage Debian Docker toolchain (`node:20-bookworm-slim`) resolving Cairo graphics dependencies.
 
 ---
@@ -69,4 +68,4 @@ Mobile & Frontend    : React, React Native, TailwindCSS, Lighthouse Optimization
 - **Portfolio & Live Demos:** [MIRA](https://mira-liard-theta.vercel.app) · [BeatRelay](https://beatrealy.vercel.app)
 
 ---
-*Always excited to collaborate on frontier Agentic AI systems, MCP tooling, and distributed system architectures.*
+*Open to collaborating on agentic AI systems, MCP tooling, and distributed backends.*
