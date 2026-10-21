@@ -58,6 +58,7 @@ Mobile & Frontend    : React, React Native, TailwindCSS, Lighthouse Optimization
 
 - **LinkedIn:** [linkedin.com/in/purujit-vij](https://www.linkedin.com/in/purujit-vij)
 - **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com)
+- **Twitter / X:** [@PurujitVij](https://x.com/PurujitVij)
 - **GitHub:** [github.com/purujitvij](https://github.com/purujitvij)
 - **Portfolio / Live Project:** [mira-liard-theta.vercel.app](https://mira-liard-theta.vercel.app)
 
