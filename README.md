@@ -35,8 +35,8 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 
 #### 2. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrealy)
 *Full-stack Spotify integration and AI agent controller powered by Model Context Protocol (MCP) HTTP streaming and Next.js 16.*
-- **Key Architecture:** Dual-transport MCP server (stdio for local desktop agents,  for remote web clients), session management with , and interactive agent chat interface ().
-- **Tool Capabilities:** Full Spotify toolchain including playback manipulation (play/pause/seek/transfer), playlist creation, saved library curation, and live OpenAPI/Swagger documentation ().
+- **Key Architecture:** Dual-transport MCP server (stdio for local desktop agents, `StreamableHTTPServerTransport` for remote web clients), session management with `mcp-session-id`, and interactive agent chat interface (`/chat`).
+- **Tool Capabilities:** Full Spotify toolchain including playback manipulation (play/pause/seek/transfer), playlist creation, saved library curation, and live OpenAPI/Swagger documentation (`/docs`).
 - **Stack:** TypeScript, Express, Next.js 16, React 19, Radix UI, Framer Motion, Vercel · [Live Demo](https://beatrealy.vercel.app)
 
 #### 3. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
