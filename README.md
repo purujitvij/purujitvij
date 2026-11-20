@@ -54,11 +54,11 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
 - **Hallucination control:** the model explains but never calculates; each tool returns one small block of the chart (146 KB → 3–8 KB), and unimplemented parts say "unavailable" instead of guessing.
 - **Stack:** TypeScript, Node.js, MCP, Vercel · [Live](https://kundli-engine-eight.vercel.app) · [Case study](https://purujit.com/work/kundli-mcp-hallucination-control/)
 
-#### 3. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrelay)
-*A chat agent that picks music to match the listener's mood and plays it on Spotify, built on my own MCP server.*
-- **Key Architecture:** Dual-transport MCP server (stdio for local desktop agents, `StreamableHTTPServerTransport` for remote web clients) with 21 tools, session management with `mcp-session-id`, separate OAuth login per user, and Gemini 2.5 Pro function calling in the agent chat (`/chat`).
-- **Tool Capabilities:** Full Spotify toolchain including playback manipulation (play/pause/seek/transfer), playlist creation, saved library curation, and live OpenAPI/Swagger documentation (`/docs`).
-- **Stack:** TypeScript, Express, Next.js 16, React 19, Radix UI, Framer Motion, Vercel · [Live Demo](https://beatrealy.vercel.app)
+#### 3. [BeatRelay — Mood-based Spotify agent on MCP](https://github.com/purujitvij/beatrelay)
+*A chat agent that picks music for your mood and plays it on Spotify. Shipped in January 2026, four months before [Spotify launched mood playlists in Claude](https://newsroom.spotify.com/2026-04-23/claude-integration/).*
+- **Built on:** [Marcel Marais's spotify-mcp-server](https://github.com/marcelmarais/spotify-mcp-server) (MIT), which provides the 21 Spotify tools for a single local user.
+- **What I added:** a Streamable HTTP transport with a session per client (`mcp-session-id`), tools that run with each signed-in user's own Spotify token, a REST `/execute` endpoint with Swagger docs, and the Next.js chat where Gemini 2.5 Pro calls the tools in a capped loop and replies in English or Hinglish.
+- **Stack:** TypeScript, Express, Next.js 16, React 19, Gemini 2.5 Pro, Vercel · [Live Demo](https://beatrealy.vercel.app) · [Case study](https://purujit.com/work/beatrelay-mood-agent/)
 
 #### 4. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
 *MCP server connecting LLMs to the Stockfish UCI engine for gameplay and tactical analysis. Fork of turlockmike/chess-mcp with fixes submitted upstream.*
