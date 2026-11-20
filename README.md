@@ -2,7 +2,7 @@
 
 **Senior Software Engineer | AI Agents, MCP & Backend Systems | TypeScript**  
 📍 Solan, Himachal Pradesh, India (remote) · 🏢 Senior Software Engineer at **Hundred Solutions (Dversi)**, Oslo, Norway  
-🌐 [purujit.com](https://purujit.com) · [About](https://purujit.com/about/) · [Work notes](https://purujit.com/work/) · [CV](https://purujit.com/cv.pdf)
+🌐 [purujit.com](https://purujit.com) · [About](https://purujit.com/about/) · [Work notes](https://purujit.com/work/) · [CV](https://purujit.com/cv.pdf) · [Contact](https://purujit.com/contact/)
 
 ---
 
@@ -117,8 +117,9 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
 - **Portfolio & CV:** [purujit.com](https://purujit.com) · [About](https://purujit.com/about/)
 - **Case studies & notes from the job:** [purujit.com/work](https://purujit.com/work/)
 - **LinkedIn:** [linkedin.com/in/purujit-vij](https://www.linkedin.com/in/purujit-vij)
-- **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com)
+- **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com) · or send a message through the [contact form](https://purujit.com/contact/)
 - **Twitter / X:** [@PurujitVij](https://x.com/PurujitVij)
+- **Instagram:** [@purujitvij](https://www.instagram.com/purujitvij/)
 
 ---
 *Open to collaborating on agentic AI systems, MCP tooling and backend systems.*
