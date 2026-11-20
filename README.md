@@ -51,7 +51,8 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
 *An astrology calculation engine in TypeScript, accurate to within 39 arcseconds of Swiss Ephemeris across 150 years of charts.*
 - **Key Architecture:** calculation core served as a REST API with API keys and as an MCP server with 30 tools for AI agents.
 - **Quality:** 526 Jest tests, run on every pull request, including a benchmark against Swiss Ephemeris.
-- **Stack:** TypeScript, Node.js, MCP, Vercel · [Live](https://kundli-engine-eight.vercel.app)
+- **Hallucination control:** the model explains but never calculates; each tool returns one small block of the chart (146 KB → 3–8 KB), and unimplemented parts say "unavailable" instead of guessing.
+- **Stack:** TypeScript, Node.js, MCP, Vercel · [Live](https://kundli-engine-eight.vercel.app) · [Case study](https://purujit.com/work/kundli-mcp-hallucination-control/)
 
 #### 3. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrelay)
 *A chat agent that picks music to match the listener's mood and plays it on Spotify, built on my own MCP server.*
