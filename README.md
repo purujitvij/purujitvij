@@ -2,13 +2,13 @@
 
 **Senior Software Engineer | AI Agents, MCP & Backend Systems | TypeScript**  
 📍 Solan, Himachal Pradesh, India (remote) · 🏢 Senior Software Engineer at **Hundred Solutions (Dversi)**, Oslo, Norway  
-🌐 [purujit.com](https://purujit.com) · [CV](https://purujit.com/cv.pdf)
+🌐 [purujit.com](https://purujit.com) · [About](https://purujit.com/about/) · [CV](https://purujit.com/cv.pdf)
 
 ---
 
 ### 🚀 About Me
 
-I build AI agents and the backends they run on.
+I build AI agents and the backends they run on. I like the ambiguous 0→1 part: turning a fuzzy problem into a clear system design, then shipping software that behaves safely in production.
 
 At **Hundred Solutions** I lead the architecture of **Dversi**, an AI agent platform where companies build agents and workflows on their own business systems; it runs property risk assessment in production for a Nordic insurer. 1,300+ commits across the backend, admin app, integrations and infrastructure, and promoted to Senior 13 months after joining.
 
@@ -20,6 +20,8 @@ What I've shipped there:
 - **Backend and infrastructure:** hardened a multi-tenant Express and PostgreSQL API (cross-tenant scope checks, rate limiting, 36 CodeQL alerts closed) and cut AWS ECS deploys from tens of minutes to a few with Docker and Terraform.
 
 Before that: three years of React and React Native, shipping apps used by 1,000+ people and dashboards scoring 95–100 on Lighthouse.
+
+More about me, how I work and the path so far: [purujit.com/about](https://purujit.com/about/)
 
 ---
 
@@ -84,9 +86,18 @@ Before that: three years of React and React Native, shipping apps used by 1,000+
 
 ---
 
+### 🎧 Off the Clock
+
+- 🎛️ **Behind the decks:** I DJ and mix songs. Finding tracks with the right BPM and key, then ordering them so each one flows into the next, is basically a sorting problem with taste as the comparator.
+- 🍳 **In the kitchen:** cooking is what I do with free time.
+- 🏔️ **Up in the mountains:** offbeat treks and long drives through the mountains are how I calm my head and reset.
+- 🖥️ **Home lab:** a 2014 Dell laptop rebuilt as a home server: new SSD, SSH locked to key + password + TOTP with post-quantum key exchange, reached over Tailscale.
+
+---
+
 ### 📬 Connect With Me
 
-- **Portfolio & CV:** [purujit.com](https://purujit.com)
+- **Portfolio & CV:** [purujit.com](https://purujit.com) · [About](https://purujit.com/about/)
 - **LinkedIn:** [linkedin.com/in/purujit-vij](https://www.linkedin.com/in/purujit-vij)
 - **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com)
 - **Twitter / X:** [@PurujitVij](https://x.com/PurujitVij)
