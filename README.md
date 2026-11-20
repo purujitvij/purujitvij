@@ -58,7 +58,7 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
 *A chat agent that picks music for your mood and plays it on Spotify. Shipped in January 2026, four months before [Spotify launched mood playlists in Claude](https://newsroom.spotify.com/2026-04-23/claude-integration/).*
 - **Built on:** [Marcel Marais's spotify-mcp-server](https://github.com/marcelmarais/spotify-mcp-server) (MIT), which provides the 21 Spotify tools for a single local user.
 - **What I added:** a Streamable HTTP transport with a session per client (`mcp-session-id`), tools that run with each signed-in user's own Spotify token, a REST `/execute` endpoint with Swagger docs, and the Next.js chat where Gemini 2.5 Pro calls the tools in a capped loop and replies in English or Hinglish.
-- **What was hard:** not the agent, but Spotify's rules. A new app stays in development mode, so until it has a privacy policy every user has to be added by hand to an allowlist in the Spotify developer dashboard, and playback control needed a Spotify Premium account.
+- **What was hard:** not the agent, but Spotify's rules. The app stays in development mode, because Spotify only lets registered organizations with 250k+ monthly users out of it: at most 5 users, each added by hand to an allowlist, and since March 2026 the app owner needs an active Premium subscription or every request fails. Playback control needs Premium too.
 - **Stack:** TypeScript, Express, Next.js 16, React 19, Gemini 2.5 Pro, Vercel · [Live Demo](https://beatrealy.vercel.app) · [Case study](https://purujit.com/work/beatrelay-mood-agent/)
 
 #### 4. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
