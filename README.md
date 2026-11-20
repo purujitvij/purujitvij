@@ -25,6 +25,20 @@ More about me, how I work and the path so far: [purujit.com/about](https://puruj
 
 ---
 
+### 📝 Latest Case Study
+
+#### [From $75+ to ~$15 a month: moving a live news CMS off Strapi Cloud with zero downtime](https://purujit.com/work/strapi-cloud-to-aws-zero-downtime/)
+*A news publisher's Strapi CMS cost $75+ a month on Strapi Cloud, plus API overage charges. I moved it to their own AWS account, on one 1 GB server.*
+- **💸 Cost:** $75+ a month plus overages → about $15 a month on AWS, roughly 80% less.
+- **⏱️ Zero downtime:** 2,100 articles and 39,000 media files moved while the site stayed live, tested on a parallel hostname before the switch.
+- **🔒 Security:** closed 44 public permissions and took Strapi from 13 critical vulnerabilities to 0, after testing the upgrade against a production snapshot.
+- **🐛 Bugs found on the way:** a wrong-images bug caused by unordered queries, and a PDF reader that broke on S3 because of CORS.
+- **Stack:** Strapi 5, AWS EC2 · S3 · IAM, SQLite, Caddy, systemd, GitHub Actions
+
+More case studies and notes from the job: [purujit.com/work](https://purujit.com/work/)
+
+---
+
 ### 🌟 Featured Projects
 
 #### 1. [MIRA — Adaptive Wellness Agent Platform](https://github.com/purujitvij/mira)
