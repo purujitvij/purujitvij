@@ -54,14 +54,33 @@ Before that: three years of React and React Native, shipping apps used by 1,000+
 
 ### 🛠️ Tech Stack
 
-```
-Languages          : TypeScript, JavaScript, SQL, Python
-AI                 : LLMs, AI agents, MCP servers, tool/function calling, RAG, pgvector, LangChain,
-                     LLM evals, Claude / OpenAI / Gemini APIs, AWS Bedrock, Azure AI Foundry, Vertex AI
-Backend            : Node.js, Express, PostgreSQL, Redis, REST APIs, OpenAPI, OAuth, Zod, Stripe
-Cloud & DevOps     : AWS (ECS, EC2, S3, IAM), Docker, Terraform, GitHub Actions, Vercel, Supabase
-Frontend & Mobile  : React, Next.js, React Native, Redux, TanStack Query, Tailwind CSS
-```
+**Languages**<br>
+<img src="https://skillicons.dev/icons?i=ts,js,py" alt="TypeScript, JavaScript, Python" /><br>
+<sub>+ SQL</sub>
+
+**AI**<br>
+<img src="https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white" alt="MCP" />
+<img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
+<img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini" />
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain" />
+<img src="https://img.shields.io/badge/Vertex_AI-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Vertex AI" /><br>
+<sub>+ LLMs, AI agents, tool/function calling, RAG, pgvector, LLM evals, OpenAI API, AWS Bedrock, Azure AI Foundry</sub>
+
+**Backend**<br>
+<img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis" alt="Node.js, Express, PostgreSQL, Redis" />
+<img src="https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
+<img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
+<img src="https://img.shields.io/badge/OpenAPI-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white" alt="OpenAPI" /><br>
+<sub>+ REST APIs, OAuth</sub>
+
+**Cloud & DevOps**<br>
+<img src="https://skillicons.dev/icons?i=aws,docker,terraform,githubactions,vercel,supabase" alt="AWS, Docker, Terraform, GitHub Actions, Vercel, Supabase" /><br>
+<sub>AWS: ECS, EC2, S3, IAM</sub>
+
+**Frontend & Mobile**<br>
+<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind" alt="React, Next.js, Redux, Tailwind CSS" />
+<img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white" alt="TanStack Query" /><br>
+<sub>+ React Native</sub>
 
 ---
 
