@@ -67,6 +67,7 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
   - **[PR #6](https://github.com/turlockmike/chess-mcp/pull/6):** Dynamic cross-platform Stockfish binary auto-discovery (M-series Apple Silicon, Intel Mac, Linux, Windows).
   - **[PR #7](https://github.com/turlockmike/chess-mcp/pull/7):** Pointed the lockfile back at the public npm registry so `npm install` works out of the box.
   - **[PR #8](https://github.com/turlockmike/chess-mcp/pull/8):** Multi-stage Debian Docker toolchain (`node:20-bookworm-slim`) resolving Cairo graphics dependencies.
+- **Why:** Claude Fable 5.1, one of the best models at the time, played 28 well-rated moves against Chess.com's 3200 bot, then lost its queen to one line-opening blunder and tried two illegal moves. A model needs an engine in the loop. · [Case study](https://purujit.com/work/why-an-llm-shouldnt-move-the-pieces/)
 
 ---
 
