@@ -44,8 +44,8 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
 #### 1. [MIRA — Adaptive Wellness Agent Platform](https://github.com/purujitvij/mira)
 *An adaptive agentic system featuring multi-tiered safety gates that knows when to stop talking and hand off safely.*
 - **Key Architecture:** C-SSRS mental health safety classifier, quarantined state extraction, pure planner over 10-item evidence-based libraries, and real-time reviewer queue (`/review`).
-- **Results (Gemini 3.6 Flash, `npm run eval -- --compare`):** escalation accuracy 14/15 vs 10/15 baseline on the dev set, 16/16 vs 11/16 on a held-out set written after the rules were frozen. The baseline missed all 20 crisis cases across both models; the agent surfaced the crisis screen on all 20. Same code also benchmarked on Llama 3.1 8B.
-- **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira.slayertunnel.xyz)
+- **Results (Gemini 3.6 Flash, `npm run eval -- --compare`):** escalation accuracy 14/15 vs 10/15 baseline on the dev set, 16/16 vs 11/16 on a held-out set written after the rules were frozen. On 10 crisis cases run on two models, the agent showed local helplines every time; the single-prompt baseline never did, and offered US numbers like 988 instead. Same code also benchmarked on Llama 3.1 8B.
+- **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira.slayertunnel.xyz) · [Case study](https://purujit.com/work/mira-knows-when-to-stop-talking/)
 
 #### 2. [Kundli Engine — Astrology API & MCP Server](https://kundli-engine-eight.vercel.app)
 *An astrology calculation engine in TypeScript, accurate to within 39 arcseconds of Swiss Ephemeris across 150 years of charts.*
@@ -108,7 +108,7 @@ More case studies and notes from the job: [purujit.com/work](https://purujit.com
 - 🎛️ **Behind the decks:** I DJ and mix songs. Finding tracks with the right BPM and key, then ordering them so each one flows into the next, is basically a sorting problem with taste as the comparator.
 - 🍳 **In the kitchen:** cooking is what I do with free time.
 - 🏔️ **Up in the mountains:** offbeat treks and long drives through the mountains are how I calm my head and reset.
-- 🖥️ **Home lab:** a 2014 Dell laptop rebuilt as a home server: new SSD, SSH locked to key + password + TOTP with post-quantum key exchange, reached over Tailscale.
+- 🖥️ **Home lab:** a 2014 Dell laptop I rebuilt by hand into a 24/7 home server for about ₹2,500: a cleanup, fresh thermal paste, 8 GB of RAM and a new battery as a built-in UPS. Ubuntu Server behind Tailscale with nothing forwarded on the router, and key + password + TOTP with post-quantum key exchange on every SSH login. [Case study](https://purujit.com/work/old-laptop-home-server/)
 
 ---
 
