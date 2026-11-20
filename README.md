@@ -1,44 +1,49 @@
 # Hi, I'm Purujit Vij 👋
 
-**Senior Software Engineer | AI Agents & Infrastructure | MCP | Distributed Systems**  
-📍 India (Operating Globally / Remote) · 🏢 Senior Software Engineer at **Dversi** (Oslo, Norway)
+**Senior Software Engineer | AI Agents, MCP & Backend Systems | TypeScript**  
+📍 Solan, Himachal Pradesh, India (remote) · 🏢 Senior Software Engineer at **Hundred Solutions (Dversi)**, Oslo, Norway  
+🌐 [purujit.com](https://purujit.com) · [CV](https://purujit.com/cv.pdf)
 
 ---
 
 ### 🚀 About Me
 
-I am a Senior Software Engineer specializing in **autonomous AI agent architectures**, **Model Context Protocol (MCP) ecosystems**, and **distributed multi-tenant backends**. My engineering journey spans the entire stack — from mobile applications (React Native) and high-performance web interfaces to cloud infrastructure (AWS ECS, Docker) and agentic tool-calling systems.
+I build AI agents and the backends they run on.
 
-At **Dversi**, I lead the architecture of enterprise AI agent platforms:
-- Building production **MCP servers** that give AI models secure tool-calling access to enterprise ERP software.
-- Architecting **entity-centric knowledge graphs** that unify ERP records, APIs, and unstructured context into single queryable intelligence layers.
-- Designing **multi-tenant backends (NestJS/TypeScript)** with strict per-customer isolation and cloud deployments.
+At **Hundred Solutions** I lead the architecture of **Dversi**, an AI agent platform where companies build agents and workflows on their own business systems; it runs property risk assessment in production for a Nordic insurer. 1,300+ commits across the backend, admin app, integrations and infrastructure, and promoted to Senior 13 months after joining.
 
----
+What I've shipped there:
+- **Multi-cloud models:** bring-your-own-key support for Azure AI Foundry, AWS Bedrock and Vertex AI, and a model registry that auto-discovers customer models.
+- **Tool search**, so agents with large MCP tool sets don't overload the context window or break prompt caching.
+- **MCP connectors** for WhatsApp, Telegram, Jira, Microsoft 365, LinkedIn and Odoo, migrated to MCP SDK v2 with Streamable HTTP sessions.
+- **Next.js admin app:** workflow editor with branching, per-tool approval for agents, and OAuth server connections.
+- **Backend and infrastructure:** hardened a multi-tenant Express and PostgreSQL API (cross-tenant scope checks, rate limiting, 36 CodeQL alerts closed) and cut AWS ECS deploys from tens of minutes to a few with Docker and Terraform.
 
-### 🧠 Core Architectural Pillars
-
-- **🤖 AI Agents & Tool Calling:** Safety gates that can only raise the risk level, quarantined state extraction, deterministic memory pipelines, and LLM eval harnesses (Gemini, Claude, Llama).
-- **🔌 Model Context Protocol (MCP):** Designing resilient, headless MCP server runtimes, stdio/SSE transports, and cross-platform native engine integrations.
-- **☁️ Cloud & Distributed Infrastructure:** Multi-tenant NestJS, PostgreSQL with Row-Level Security (RLS), Supabase, AWS ECS deployment optimization, Docker multi-stage builds, and CI/CD pipelines.
+Before that: three years of React and React Native, shipping apps used by 1,000+ people and dashboards scoring 95–100 on Lighthouse.
 
 ---
 
-### 🌟 Featured Repositories
+### 🌟 Featured Projects
 
 #### 1. [MIRA — Adaptive Wellness Agent Platform](https://github.com/purujitvij/mira)
 *An adaptive agentic system featuring multi-tiered safety gates that knows when to stop talking and hand off safely.*
 - **Key Architecture:** C-SSRS mental health safety classifier, quarantined state extraction, pure planner over 10-item evidence-based libraries, and real-time reviewer queue (`/review`).
 - **Results (Gemini 3.6 Flash, `npm run eval -- --compare`):** escalation accuracy 14/15 vs 10/15 baseline on the dev set, 16/16 vs 11/16 on a held-out set written after the rules were frozen. The baseline missed all 20 crisis cases across both models; the agent surfaced the crisis screen on all 20. Same code also benchmarked on Llama 3.1 8B.
-- **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel · [Live Demo](https://mira.slayertunnel.xyz)
+- **Stack:** TypeScript, Next.js, Supabase (PostgreSQL with RLS), Clerk, Vercel
 
-#### 2. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrealy)
-*Full-stack Spotify integration and AI agent controller powered by Model Context Protocol (MCP) HTTP streaming and Next.js 16.*
-- **Key Architecture:** Dual-transport MCP server (stdio for local desktop agents, `StreamableHTTPServerTransport` for remote web clients), session management with `mcp-session-id`, and interactive agent chat interface (`/chat`).
+#### 2. [Kundli Engine — Astrology API & MCP Server](https://kundli-engine-eight.vercel.app)
+*An astrology calculation engine in TypeScript, accurate to within 39 arcseconds of Swiss Ephemeris across 150 years of charts.*
+- **Key Architecture:** calculation core served as a REST API with API keys and as an MCP server with 30 tools for AI agents.
+- **Quality:** backed by 270+ Jest tests.
+- **Stack:** TypeScript, Node.js, MCP, Vercel · [Live](https://kundli-engine-eight.vercel.app)
+
+#### 3. [BeatRelay — Spotify AI Controller (MCP)](https://github.com/purujitvij/beatrelay)
+*A chat agent that picks music to match the listener's mood and plays it on Spotify, built on my own MCP server.*
+- **Key Architecture:** Dual-transport MCP server (stdio for local desktop agents, `StreamableHTTPServerTransport` for remote web clients) with 21 tools, session management with `mcp-session-id`, separate OAuth login per user, and Gemini 2.5 Pro function calling in the agent chat (`/chat`).
 - **Tool Capabilities:** Full Spotify toolchain including playback manipulation (play/pause/seek/transfer), playlist creation, saved library curation, and live OpenAPI/Swagger documentation (`/docs`).
 - **Stack:** TypeScript, Express, Next.js 16, React 19, Radix UI, Framer Motion, Vercel · [Live Demo](https://beatrealy.vercel.app)
 
-#### 3. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
+#### 4. [Chess MCP & Engine Ecosystem](https://github.com/purujitvij/chess-mcp)
 *MCP server connecting LLMs to the Stockfish UCI engine for gameplay and tactical analysis. Fork of turlockmike/chess-mcp with fixes submitted upstream.*
 - **Open PRs on [turlockmike/chess-mcp](https://github.com/turlockmike/chess-mcp):**
   - **[PR #6](https://github.com/turlockmike/chess-mcp/pull/6):** Dynamic cross-platform Stockfish binary auto-discovery (M-series Apple Silicon, Intel Mac, Linux, Windows).
@@ -47,25 +52,25 @@ At **Dversi**, I lead the architecture of enterprise AI agent platforms:
 
 ---
 
-### 🛠️ Tech Stack & Tooling
+### 🛠️ Tech Stack
 
 ```
-Core Languages       : TypeScript, JavaScript, Python, SQL, C++ (UCI tools)
-Backend & Cloud      : Node.js, NestJS, Next.js, Express, PostgreSQL, Supabase, Redis
-DevOps & Infra       : AWS (ECS, S3), Docker (Multi-stage), GitHub Actions, CI/CD
-AI & Protocols       : Model Context Protocol (MCP), Claude API, Gemini API, LLM Evals
-Mobile & Frontend    : React, React Native, TailwindCSS, Lighthouse Optimization
+Languages          : TypeScript, JavaScript, SQL, Python
+AI                 : LLMs, AI agents, MCP servers, tool/function calling, RAG, pgvector, LangChain,
+                     LLM evals, Claude / OpenAI / Gemini APIs, AWS Bedrock, Azure AI Foundry, Vertex AI
+Backend            : Node.js, Express, PostgreSQL, Redis, REST APIs, OpenAPI, OAuth, Zod, Stripe
+Cloud & DevOps     : AWS (ECS, EC2, S3, IAM), Docker, Terraform, GitHub Actions, Vercel, Supabase
+Frontend & Mobile  : React, Next.js, React Native, Redux, TanStack Query, Tailwind CSS
 ```
 
 ---
 
 ### 📬 Connect With Me
 
+- **Portfolio & CV:** [purujit.com](https://purujit.com)
 - **LinkedIn:** [linkedin.com/in/purujit-vij](https://www.linkedin.com/in/purujit-vij)
 - **Email:** [vijpurujit@gmail.com](mailto:vijpurujit@gmail.com)
 - **Twitter / X:** [@PurujitVij](https://x.com/PurujitVij)
-- **GitHub:** [github.com/purujitvij](https://github.com/purujitvij)
-- **Portfolio & Live Demos:** [MIRA](https://mira.slayertunnel.xyz) · [BeatRelay](https://beatrealy.vercel.app)
 
 ---
-*Open to collaborating on agentic AI systems, MCP tooling, and distributed backends.*
+*Open to collaborating on agentic AI systems, MCP tooling and backend systems.*
